@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Омнидеск</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="container-header">
+            <nav class="nav-header">
+                <ul class="nav-block">
+                    <li class="nav-item">
+                        <a href="#" class="nav-linck">Омнипанель</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-linck">Каналы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-linck">Команда</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-linck">Центр поддержки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-linck">Статистика</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-linck">Настройки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-linck">Оплата услуг</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="header__options">
+                <li class="header__options_item">
+                    <a class="header__options_linck" href="#">
+                        <i class="_icon-what"></i>
+                    </a>
+                </li>
+                <li class="header__options_item">
+                    <a class="header__options_linck" href="#">
+                        <i class="_icon-user"></i>
+                    </a>
+                </li>
+                <li class="header__options_item big-more">
+                    <ul>
+                        <li class="big-more__item">
+                            <a class="big-more__linck" href="#">
+                                <img class="big-more__img" src="./images/memoji.png" alt="">
+                            </a>
+                        </li>
+                        <!-- <li><a href="#"><img src="" alt=""></a></li>
+                        <li><a href="#"><img src="" alt=""></a></li>
+                        <li><a href="#"><img src="" alt=""></a></li> -->
+                    </ul>
+                    <a class="header__options_linck" href="#">
+                        <i class="_icon-more "></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container-settings">
+            <div class="sidebar">
+                <div class="sidebar__labell">
+                    Профиль администратора
+                </div>
+                <ul class="sidebar__points">
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">
+                            <i class="_icon _icon-user"></i>
+                            <span class="sidebar__text">Основные данные</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item active">
+                        <a class="sidebar__link" href="#">
+                            <i class="_icon _icon-finish"></i>
+                            <span class="sidebar__text">2FA</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">
+                            <i class="_icon _icon-password"></i>
+                            <span class="sidebar__text">Смена пароля</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="content__wrapper">
+                    <div class="content__description">
+                        <p class="content__text">Двухфакторная аутентификация (2FA) позволяет эффективнее защищать
+                            аккаунт от несанкционированного проникновения. При её использовании для доступа к вашему
+                            аккаунту необходимо предоставить данные двух разных типов (пароль + специальный код), что
+                            значительно надёжнее классической парольной системы.</p>
+                        <p class="content__text">Подробнее о настройках этого подраздела
+                            <a href="#">читайте в нашей базе знаний.</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="content__authentication authentication">
+                    <div class="authentication__item">
+                        <i class="authentication__icon _icon-start"></i>
+                        <i class="authentication__icon _icon-finish fine"></i>
+                        <strong class="authentication__text">Двухфакторная аутентификация отключена</strong>
+                        <button class="authentication__button">Настроить</button>
+                    </div>
+                    <form class="add__app" action="#" method="post" name="qr-data">
+                        <div class="add__app_header">
+                            <div class="icon-box">
+                                1
+                                <i class="_icon-good"></i>
+                            </div>
+                            <div class="add__app_text">Добавление Омнидеска в приложение</div>
+                        </div>
+                        <div class="add__app_action1">
+                            <p class="add__app_discription">
+                                Откройте мобильное приложение для создания кодов двухфакторной аутентификации (к
+                                примеру,
+                                <a href="#">Google Authenticator</a>,
+                                <a href="#">Microsoft Authenticator</a>,
+                                <a href="#">Authy</a>,
+                                <a href="#">1Password</a>,
+                                <a href="#">LastPass Authenticator</a> ),
+                                отсканируйте QR-код и укажите в поле шесть цифр из приложения:
+                            </p>
+                            <div class="add__app_qrImg"></div>
+                            <div class="add__app_qrCode">
+                                <input class="input-qr" maxlength="6" type="text" name="qr-code" id="qr-code">
+                                <div class="add-app_box-icon">
+                                    <i class="_icon-bad"></i>
+                                    <i class="_icon-ok"></i>
+                                </div>
+                            </div>
+                            <a href="#" class="btn1">Продолжить</a>
+                        </div>
+
+                        <div class="add__app_wrapper">
+                            <div class="add__app_header two-elem">
+                                <div class="icon-box">
+                                    2
+                                    <i class="_icon-good good-two"></i>
+                                </div>
+                                <div class="add__app_text text-two">Сохранение резервных кодов доступа</div>
+                            </div>
+                            <div class="add__app_action2">
+                                <p class="add__app_discription">
+                                    <strong>Очень важно</strong> сохранить нижеуказанные одноразовые коды. Если
+                                    потеряете смартфон или
+                                    купите новый, вы не сможете попасть в ваш аккаунт без этих кодов. Скопируйте и
+                                    сохраните их в надёжном месте:
+                                </p>
+                                <textarea name="fileKode" id="fileKode"  rows="6" cols="80" class="add__app_data">
+                                    2qqtu-jursc htgn2-2cx62 s8uuf-bjuvg lfkqe-aeoda 56uo0-2sgd8
+
+                                    l0nn8-77a5d 9uirs-rx47d dvj8g-01tcc v3oc5-8elim fd65r-zqak4
+                                </textarea>
+                                <div class="add__app_save">
+                                    <span  class="add__app_copy" onclick="myFunction()">скопировать в буфер
+                                        обмена</span>
+                                        <a class="add__app_downlod" href="#" download>скачать файл с кодами</a>
+                                </div>
+                                <a href="#" class="add__app_more">Продолжить</a>
+                            </div>
+                        </div>
+
+
+                        <div class="add__app_wrapper2">
+                            <div class="add__app_header two-elem">
+                                <div class="icon-box">
+                                    3
+                                    <i class="_icon-good"></i>
+                                </div>
+                                <div class="add__app_text">Настройка дополнительного способа для получения кодов</div>
+                            </div>
+                            <div class="add__app_action3">
+                                <p class="add__app_discription">
+                                    В качестве дополнительного способа для получения кодов используется <a href="#"
+                                        class="telegram">Телеграм.</a> Если
+                                    этот способ покажется вам удобным, вы сможете сделать его основым. Откройте
+                                    Телеграм, найдите бота <strong>@omnidesk_2fa_bot</strong>, отправьте в его адрес
+                                    следующий набор
+                                    символов и укажите в поле шесть цифр из ответа бота: </p>
+                                <div class="add__app_data">
+                                    2lns-eafx-p7mx-btyn
+                                </div>
+                                <div class="add__app_qrCode qrCode-two">
+                                    <input class="input-qr" maxlength="6" type="text" name="qr-code2" id="qr-code2">
+                                    <div class="add-app_box-icon">
+                                        <i class="_icon-bad bad2"></i>
+                                        <i class="_icon-ok"></i>
+                                    </div>
+                                </div>
+                                <button type="submit" class="add__app_more finish" disabled>Завершить настройку</button>
+                            </div>
+                        </div>
+
+
+                    </form>
+                    <form class="add__bot" id="bots" action="#" method="post" name="bot">
+                        <div class="bot">
+                            <div class="bot__icon icon-pk">
+                                <i class="_icon-app"></i>
+                            </div>
+                            <div class="bot__box">
+                                <label class="bot__label" for="computer">Приложение для создания 2FA-кодов</label>
+                                <a class="bot__linck" href="#">резервные коды доступа</a>
+                            </div>
+                            <div class="bot__box_input">
+                                <input class="bot__input" type="checkbox" name="pk" id="computer" checked>
+                                <i class="_icon-star"></i>
+                            </div>
+                        </div>
+                        <div class="bot">
+                            <div class="bot__icon icon-tel">
+                                <i class="_icon-telegram"></i>
+                            </div>
+                            <div class="bot__box">
+                                <label class="bot__label" for="telegram">Коды от Телеграм-бота @omnidesk_2fa_bot</label>
+                                <div class="bot__linck">Вы привязали Телеграм-аккаунт @serj_preobraj,
+                                    <a href="#">привязать другой аккаунт</a>
+                                </div>
+                            </div>
+                            <div class="bot__box_input">
+                                <input class="bot__input" type="checkbox" name="tl" id="telegram">
+                                <i class="_icon-star"></i>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
